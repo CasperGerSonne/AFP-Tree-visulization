@@ -20,15 +20,25 @@ let movetreeRefProp (postree : PosTree<string>)  (movedist:real) =
                 | Node((_,oldx),_) -> newx = oldx + movedist
 
 
-let _ = Check.Quick movetreeRefProp;;
-
+let internal movetreetest = Check.Quick movetreeRefProp
 
 let internal test1 =
     1 = 1
 
-let run (opts: CmdLine.TestOptions) :int =
-    if test1
+let run (opts: CmdLine.TestOptions) :string =
+    
+    if test1 
     then
         printfn "test parsed" 
-        0
+        
     else 1
+
+    if movetreetest 
+    then 
+        printfn "movetreetest passed"
+        
+    else 
+        printfn "error in movetree"
+        1
+    0
+

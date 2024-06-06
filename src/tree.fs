@@ -23,10 +23,3 @@ let rec fit le re =
     |((_,r)::le' , (l,_)::re') -> max (r-l + 1.0) (fit le' re')
     |_ ,_ -> 0.0
 
-    
-let rec fitlistl eList = 
-    match eList with
-    |
-
-
-and firlistl'

@@ -5,11 +5,13 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="CommandLineParser.FSharp" Version="2.9.1" />
+    <PackageReference Include="FsCheck" Version="2.16.6" />
     <Compile Include="src/CmdLine.fs" />
     <Compile Include="src/Types.fs" />
     <Compile Include="src/Tree.fs" />
     <Compile Include="src/Test.fs" />
     <Compile Include="src/Print.fs" /> 
-    <Compile Include="src/Program.fs" />
+    <Compile Include="src/Program.fs" /> 
+    
   </ItemGroup>
 </Project>
