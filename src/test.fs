@@ -21,3 +21,14 @@ let movetreeRefProp (postree : PosTree<string>)  (movedist:real) =
 
 
 let _ = Check.Quick movetreeRefProp;;
+
+
+let internal test1 =
+    1 = 1
+
+let run (opts: CmdLine.TestOptions) :int =
+    if test1
+    then
+        printfn "test parsed" 
+        0
+    else 1
