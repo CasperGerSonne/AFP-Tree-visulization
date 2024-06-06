@@ -4,10 +4,12 @@
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="src/types.fs" />
-    <Compile Include="src/tree.fs" />
-    <Compile Include="src/test.fs" />
-    <Compile Include="src/print.fs" />
+    <PackageReference Include="CommandLineParser.FSharp" Version="2.9.1" />
+    <Compile Include="src/CmdLine.fs" />
+    <Compile Include="src/Types.fs" />
+    <Compile Include="src/Tree.fs" />
+    <Compile Include="src/Test.fs" />
+    <Compile Include="src/Print.fs" /> 
     <Compile Include="src/Program.fs" />
   </ItemGroup>
 </Project>

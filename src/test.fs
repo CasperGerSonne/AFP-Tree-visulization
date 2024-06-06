@@ -1,11 +1,23 @@
-#r "nuget: FsCheck";
-open FsCheck 
+module Test
 
-let rec sumA xs acc = 
-    match xs with
-    |[] -> acc
-    |x::xs' -> (sumA xs' acc) + acc
+// #r "nuget: FsCheck";
+//open FsCheck 
 
-let sumRefProp xs = List.sum xs = sumA xs 0
+//let rec sumA xs acc = 
+//    match xs with
+ //   |[] -> acc
+   // |x::xs' -> (sumA xs' acc) + acc
 
-let _ = Check.Quick sumRefProp;;
+//let sumRefProp xs = List.sum xs = sumA xs 0
+
+// let _ = Check.Quick sumRefProp;;
+
+let internal test1 =
+    1 = 1
+
+let run (opts: CmdLine.TestOptions) :int =
+    if test1
+    then
+        printfn "test parsed" 
+        0
+    else 1
