@@ -1,12 +1,13 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net8.0</TargetFramework>
   </PropertyGroup>
-
   <ItemGroup>
+    <Compile Include="src/types.fs" />
+    <Compile Include="src/tree.fs" />
+    <Compile Include="src/test.fs" />
+    <Compile Include="src/print.fs" />
     <Compile Include="src/Program.fs" />
   </ItemGroup>
-
 </Project>
