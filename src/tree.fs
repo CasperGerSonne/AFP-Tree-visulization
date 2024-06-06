@@ -1,1 +1,4 @@
-let rec movetree Node((label,x),subtrees) distance = 
+let rec movetree postree distance = 
+    match postree with
+    | Node((label,x),subtrees) ->  Node((label,(x + distance)),subtrees) 
+                            
